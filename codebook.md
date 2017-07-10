@@ -1,12 +1,11 @@
-CodeBook for dataset tidy_date
---------------------------------------
+# CodeBook
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . 
 
 Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. 
 
 
-Data source
+## Data source
 --------------------------------------
 
 The data is collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
@@ -14,7 +13,7 @@ The data is collected from the accelerometers from the Samsung Galaxy S smartpho
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 
-Design
+## Design
 --------------------------------------
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
@@ -32,7 +31,7 @@ The sensor acceleration signal, which has gravitational and body motion componen
 From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 
-Features original data
+## Features original data
 --------------------------------------
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
@@ -96,19 +95,27 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt' in the original data set.
 
-Features tidy_data
+## Analysis steps
 --------------------------------------
 
-The train en test dataset in the original dataset are merged into dataset 'tidy_data'.
+The R script contains code that does the following:
+
+The base, activities and subject data of both the train and test dataset are loaded.
+
+The variable names are  extracted from the original file and merged into the train and test data
+
+The variables names are extracted from the original file and merged into the train and test data
 
 Subject and activity information are extracted from the original files and merged into tidy_data.
 
-Tidy_data is labeled with descriptive variable names in the following style "time of body acceleration mean x" (original: tBodyAcc-X(YZ)).
+The train en test dataset are merged into dataset 'tidy_data'.
 
-Mean and standard deviation values are extracted from the above list, and given for every subject and activity combination. Organized in long format.
+Tidy_data is re-labeled with descriptive variable names in the following style "time of body acceleration mean x" (original: tBodyAcc-X(YZ)).
+
+Mean and standard deviation values are extracted from the original data, and given for every subject and activity combination. Organized in long format.
 
 
-Notes
+## Notes
 --------------------------------------
 
 Features are normalized and bounded within [-1,1].
@@ -122,7 +129,7 @@ For original README and features.txt files in the original dataset see link abov
 Parts of this file are copies of the original README en features files.
 
 
-License
+## License
 --------------------------------------
 
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
