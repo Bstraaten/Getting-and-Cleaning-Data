@@ -22,8 +22,10 @@ The codebook will show the reader the original data source, explain the study de
 
 Run_analysis is the R script with the code. For additional explanations of the code, or links to helpfull sources on the web see the remarks (marked with #).
 
+In order to run this R script make sure to adjust the read table command to your local downloadfolder.
+
 ## 4. tidy_data
 
-The output of the R script is a tidy data set with the meand values of a subselection of variables of the original data set (mean and std), by subject and activity. Organized in a long format. 
+The output of the R script is a tidy data set a subselection of variables of the original data set, containing mean and std values. From this subset the mean values are calculated by subject and activity. Organized in a long format. 
 
-Tidy_data is a text file. See the R script for a read_table to load and test  tidy_data. 
+Tidy_data is a text file. See the R script for a read_table command to load and test tidy_data. 
